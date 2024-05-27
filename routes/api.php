@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LevelController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
@@ -44,3 +45,9 @@ Route::group(
 
     }
 );
+
+//Rutas Aldrick
+
+Route::get('/level', [LevelController::class,'index']);
+
+
