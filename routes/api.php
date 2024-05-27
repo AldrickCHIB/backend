@@ -48,6 +48,8 @@ Route::group(
 
 //Rutas Aldrick
 
-Route::get('/level', [LevelController::class,'index']);
+Route::get('/level', [LevelController::class,'getAll']);
+Route::get('/level/{clave}', [LevelController::class,'findOne']);
+Route::post('/level/', [LevelController::class,'save']);
 
 
